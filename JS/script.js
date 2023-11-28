@@ -1,6 +1,7 @@
 const apiKey = 'a2a800b9757efb616e99d73bbad5e1fc'
 const apiCountryUrl = 'https://flagsapi.com/BE/flat/64.png'
-const city = "esteio"
+const cityInput = document.querySelector("#city-input")
+const searchBtn = document.querySelector("#search")
 
 
 //functions
@@ -15,4 +16,11 @@ const getWeatherData = async(city) => {
   console.log(data)
 }
 
-getWeatherData(city)
+
+//Events
+
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+
+  getWeatherData(cityInput.value)
+})
