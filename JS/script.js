@@ -5,6 +5,8 @@ const searchBtn = document.querySelector("#search")
 const cityName = document.querySelector('.city-name')
 const cityTemperature = document.querySelector('#city-temperature')
 const cityHumidity = document.querySelector('#city-humidity')
+const cityWind = document.querySelector('#city-wind')
+const countryFlag = document.querySelector('.country-flag')
 
 
 //functions
@@ -16,10 +18,16 @@ const getWeatherData = async(city) => {
   const response = await fetch(apiWeatherUrl)
   const data = await response.json()
 
-  cityName.innerText = data.name
-  cityTemperature.innerText = data.main.temp + " ºC"
-  cityHumidity.innerText = data.main.humidity + " Umidade"
+  getCityWeather(data)
   console.log(data)
+}
+
+const getCityWeather = (city) => {
+  cityName.innerText = city.name
+  cityTemperature.innerText = city.main.temp + " ºC"
+  cityHumidity.innerText = city.main.humidity + " Umidade"
+  cityWind.innerText = Math.round(city.wind.speed * 3.6).toFixed(2) + " km/h"
+  countryFlag.src =  `https://flagsapi.com/${city.sys.country}/flat/64.png`
 }
 
 
