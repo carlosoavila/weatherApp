@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
   <script src="/JS/script.js" defer></script>
   <title>Weather App</title>
 </head>
@@ -28,15 +29,21 @@
         <img class="country-flag" src="https://flagsapi.com/BR/flat/64.png" alt="country">
       </div>
     
-
-      <span><i class="fa-solid fa-temperature-low"></i></span>
-      <h3 id="city-temperature">Temperatura: 35ºC</h3>
-
-      <span><i class="fa-solid fa-water"></i></span>
-      <span id="city-humidity">Umidade: 22</span>
-
-      <span><i class="fa-solid fa-wind"></i></span>
-      <span id="city-wind">Vento: 22km/h</span>
+      <div class="temperature">
+        <span><i class="fa-solid fa-temperature-low"></i></span>
+        <h3 id="city-temperature">35ºC</h3>
+      </div>
+      
+      <div class="humidity">
+        <span><i class="fa-solid fa-water"></i></span>
+        <span id="city-humidity">Umidade: 22</span>
+      </div>
+      
+      <div class="wind">
+        <span><i class="fa-solid fa-wind"></i></span>
+        <span id="city-wind">Vento: 22km/h</span>
+      </div>
+      
        
     </div>
   </main>

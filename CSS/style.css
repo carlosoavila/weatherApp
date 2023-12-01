@@ -2,31 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+}
 
 .weather-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  width: 100%;
-  height: 100vh;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .city-weather {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
 }
 
 .city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.wind {
   display: flex;
   align-items: center;
   justify-content: center;
