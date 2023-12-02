@@ -34,6 +34,23 @@ body {
   gap: 10px;
 }
 
+.form-input-container input {
+  width: 200px;
+  text-align: center;
+  height: 30px;
+  font-size: 18px;
+  border: solid 2px ;
+  border-radius: 8px;
+}
+
+.form-input-container button {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
 .city-weather {
   display: flex;
   flex-direction: column;
