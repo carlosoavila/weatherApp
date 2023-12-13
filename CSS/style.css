@@ -24,7 +24,7 @@ background-color: #A9EBEF;
   border-radius: 20px;
   width: 500px;
   height: 500px;
-  
+  opacity: 80%;
 }
 
 .form {
@@ -58,6 +58,10 @@ background-color: #A9EBEF;
   color:#051D66;
 }
 
+.form h3 {
+  font-size: 25px;
+}
+
 .city-weather {
   display: flex;
   flex-direction: column;
@@ -72,7 +76,7 @@ background-color: #A9EBEF;
   align-items: center;
   justify-content: center;
   gap: 5px;
- 
+  font-size: 25px;
 }
 
 .temperature {
@@ -95,6 +99,7 @@ background-color: #A9EBEF;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  font-size: 25px;
 }
 
 .wind {
@@ -102,6 +107,7 @@ background-color: #A9EBEF;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  font-size: 25px;
 }
 
 .sky {

@@ -8,6 +8,23 @@ const cityTemperature = document.querySelector('#city-temperature')
 const cityHumidity = document.querySelector('#city-humidity')
 const cityWind = document.querySelector('#city-wind')
 const countryFlag = document.querySelector('.country-flag')
+const cityWeather = document.querySelector("city-weather")
+
+//elements
+
+//loading...........
+  class weatherElements{
+    constructor(div, span, h3, img) {
+      this.div = document.createElement(div)
+      this.span = document.createElement(span)
+      this.h3 = document.createElement(h3)
+      this.img = document.createElement(img)
+
+      render() {
+        cityWeather.append(this.div, this.span, this.h3, this.img)
+      }
+    }
+  }
 
 
 //functions
